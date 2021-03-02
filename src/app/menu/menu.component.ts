@@ -9,10 +9,6 @@ export class MenuComponent implements OnInit {
 
   constructor() { 
   }
-  clickBtn(){
-    alert('test');
-  }
-
   ngOnInit(): void {
   }
 
