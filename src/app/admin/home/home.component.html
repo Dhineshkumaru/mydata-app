@@ -1,20 +1,20 @@
 <div class="works-style">
    <div>
-    <p>Home page Text:1</p>
-    <p>Home page Text:2</p>
-    <p>Home page Text:3</p>
-    <p>Home page Text:4</p>
-    
+      <p>Home page Text:1</p>
+      <p>Home page Text:2</p>
+      <p>Home page Text:3</p>
+      <p>Home page Text:4</p>
+
    </div>
-   <div  *ngFor="let items of strArrs1" >
-      <p >{{items.strline2}}</p>
-      <p [hidden]="false">{{items.strline3}}</p>
-    </div   >
+   <div *ngFor="let items of strArrs1">
+      <button (click)="toggle(items)">Click</button>
+      <p>{{items.strline2}}</p>
+      <p [hidden]="items.hide">{{items.strline3}}</p>
+   </div>
    <div *ngFor="let strArr of strArrs" hidden>
       <h4 hidden>{{strArr.strline}}</h4>
       <h4 [hidden]="true">{{strArr.strline1}}</h4>
-    </div>
-   
+   </div>
+
+
 </div>
-
-
