@@ -6,4 +6,13 @@
         <p>Post page Text:3</p>
         <p>Post page Text:4</p>
        </div>
+
+       <div>
+           <h4>NgIf</h4>
+           <ul *ngFor="let item of people" >
+               <li *ngIf="item.age<30" >
+                {{item.age}} {{item.name}}
+               </li>
+           </ul>
+       </div>
 </div>
